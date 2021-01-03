@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Blogs</h1>
+<h1><%= t('view.Blogs') %></h1>
 
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Content</th>
+      <th><%= t('view.Title') %></th>
+      <th><%= t('view.Content') %></th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= blog.title %></td>
         <td><%= blog.content %></td>
-        <td><%= link_to 'Show', blog %></td>
-        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to t('view.Show'), blog %></td>
+        <td><%= link_to t('view.Edit'), edit_blog_path(blog) %></td>
+        <td><%= link_to t('view.Destroy'), blog, method: :delete, data: { confirm: t('message.Are you sure?') } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Blog', new_blog_path %>
+<%= link_to t('view.New Blog'), new_blog_path %>
