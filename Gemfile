@@ -11,8 +11,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # Middleware
 gem 'pg', '>= 0.18', '< 2.0'
-# Use Puma as the app server
 gem 'puma', '~> 3.11'
+gem 'unicorn'
 
 # View/Front
 gem 'sass-rails', '~> 5.0'
